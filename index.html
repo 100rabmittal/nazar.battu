@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="How NazarBattu Standard handles camera information, local profiles, screen-time data, and privacy choices.">
+  <meta name="referrer" content="no-referrer">
+  <title>NazarBattu Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f8fc; --paper: #fff; --text: #17243a; --muted: #42536a; --link: #164e9e; --line: #ccd5e2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.7 system-ui, sans-serif; }
+    main { max-width: 52rem; margin: 2rem auto; padding: clamp(1.25rem, 5vw, 3rem); background: var(--paper); border: 1px solid var(--line); border-radius: 1rem; }
+    h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.2; }
+    h2 { font-size: 1.35rem; line-height: 1.4; margin-top: 2rem; }
+    .meta { color: var(--muted); }
+    a { color: var(--link); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    li { margin-bottom: .6rem; }
+    p, li { overflow-wrap: anywhere; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101724; --paper: #182335; --text: #edf3fc; --muted: #c2cee0; --link: #9cc7ff; --line: #43536b; } }
+    @media (max-width: 36rem) { main { margin: 0; border: 0; border-radius: 0; } }
+    @media print { main { margin: 0; border: 0; padding: 0; } body { background: white; color: black; } }
+  </style>
+</head>
+<body>
+<!-- Local review candidate. Publisher approval and release verification are tracked in docs/release/privacy-policy.md; do not publish automatically. -->
+<main>
+  <header>
+    <p class="meta">NazarBattu Standard</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: <time datetime="2026-11-14">14 November 2026</time></p>
+    <p>NazarBattu is provided by Sourabh Mittal. This policy explains how the Standard Android app handles information when adults use it for themselves or parents and legal guardians configure it for their children.</p>
+    <p>For privacy questions, contact <a href="mailto:nazarbattu.support@gmail.com">nazarbattu.support@gmail.com</a>. The separately distributed managed-device edition is outside the scope of this policy.</p>
+  </header>
+
+  <section aria-labelledby="purpose">
+    <h2 id="purpose">1. What NazarBattu does</h2>
+    <p>NazarBattu provides viewing-distance reminders, screen-time controls, brightness and media-volume controls, and local usage reports. It does not require an online account. Personal mode is for an adult's own use; family mode is for a parent or legal guardian supervising a child.</p>
+    <p>The Standard app is designed to work offline and does not request Android internet permission. Opening a website or sending a support email uses a separate browser or email service.</p>
+  </section>
+
+  <section aria-labelledby="information">
+    <h2 id="information">2. Information processed on your device</h2>
+    <ul>
+      <li><strong>Camera information:</strong> front-camera frames are processed in memory to detect faces, estimate viewing distance and, when enrolled, recognize a local profile. The app does not save camera photos or video or send these frames to the publisher.</li>
+      <li><strong>Optional face enrollment:</strong> the app stores a numeric representation of the enrolled face, called a face template, with a local profile. Profile names and face templates are encrypted on the device. Face templates are sensitive biometric information; enrollment is optional.</li>
+      <li><strong>App and usage information:</strong> visible app names, icons and package identifiers support app selection. Foreground-app and usage information supports protection rules and reports. Stored history includes app-usage totals, sessions, distance events and estimates, warning counts, applied brightness and volume, and local security events.</li>
+      <li><strong>Settings and access controls:</strong> the app stores profile rules, schedules, app selections, calibration, consent records and protection preferences. PIN and recovery-code verification information is stored locally rather than as the original PIN or recovery code.</li>
+      <li><strong>Device state:</strong> the app uses available proximity readings, screen and lock state, camera availability and system conditions to operate or pause protection.</li>
+    </ul>
+    <p>These records support local protection and reports, not advertising or training a publisher-operated face model. Recognition selects a usage profile; it does not authenticate a parent, verify age or establish guardianship. Face recognition and viewing-distance estimates can be inaccurate.</p>
+  </section>
+
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">3. Permissions and your choices</h2>
+    <ul>
+      <li><strong>Camera:</strong> for live setup, face detection, distance estimation and optional enrollment.</li>
+      <li><strong>Usage access:</strong> to identify protected apps and calculate usage.</li>
+      <li><strong>Display over other apps:</strong> to show protection warnings over the app being used.</li>
+      <li><strong>Modify system settings:</strong> to apply configured screen-brightness controls.</li>
+      <li><strong>Notifications and foreground service:</strong> to make ongoing protection visible while it operates.</li>
+      <li><strong>Android biometric authentication, where available:</strong> Android verifies administrator access; NazarBattu does not receive the system's biometric templates.</li>
+    </ul>
+    <p>The app does not request microphone, precise-location, contacts or message-content access. You can manage permissions in Android Settings, but disabling required access can stop or limit the corresponding features.</p>
+    <p>Authorized users can stop protection, change profile settings or withdraw consent in the app. Turning off a profile's camera-visibility warning only hides that warning; it does not disable camera processing, distance reminders or proximity protection. To stop protection processing, stop protection or withdraw consent.</p>
+  </section>
+
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">4. Sharing and third-party components</h2>
+    <p>NazarBattu does not sell or rent local profile, face-template or usage information, or provide a remote dashboard through which the publisher receives it. Camera processing uses bundled face-detection and recognition libraries on the device. Android and services you use independently have their own data practices.</p>
+    <p>Version 1 contains no advertising or publisher-operated analytics service. A future advertising or data-sharing feature would require an updated policy and any applicable disclosures and consent before it takes effect.</p>
+  </section>
+
+  <section aria-labelledby="retention">
+    <h2 id="retention">5. How long information is kept</h2>
+    <p>Activity history, including usage, distance, metrics, security events and bonus-time history, is kept for a rolling window of 90 local calendar dates, including today. Cleanup runs when the app can operate. If the device is off or Android has stopped the app, expired history can remain until the app next runs and performs cleanup.</p>
+    <p>Profiles, face templates, settings, app selections, calibration and access-control records remain until you change or delete them, clear app data or uninstall the app. Stopping protection or withdrawing consent does not automatically delete saved information.</p>
+  </section>
+
+  <section aria-labelledby="deletion">
+    <h2 id="deletion">6. Access, correction and deletion</h2>
+    <p>Use authenticated controls to view local profiles and reports, change settings and remove a non-default profile. Removing a profile deletes its saved name, face template, policy and linked usage history. Generic security events are not linked to that profile and follow the history-retention period.</p>
+    <p>To reset all local information, open <strong>Privacy, data &amp; app information &gt; Delete all local NazarBattu data</strong>, enter the administrator PIN and confirm. The app first stops protection and restores device controls; if it cannot do that safely, it reports that deletion has not completed so you can retry. Android's app-data clearing and uninstall options also remove the app's local data.</p>
+    <p>Deletion is logical removal from application storage, not a guarantee of forensic erasure from flash storage or operating-system artifacts. Since the publisher does not hold a remote copy of your local profiles or face templates, emailing support cannot remotely retrieve or erase them. Copies you separately share in an email are handled as support correspondence.</p>
+  </section>
+
+  <section aria-labelledby="children">
+    <h2 id="children">7. Children and guardian controls</h2>
+    <p>Family use is intended to include children aged 2–15 under the supervision of a parent or legal guardian. An authorized adult must review the disclosure and provide the required authorization before configuring protection or enrolling a child's face. Do not enroll another person without the necessary permission and legal authority.</p>
+    <p>Parents and guardians can manage local information, decline optional face enrollment, withdraw consent and request help with deletion. Contact the publisher with concerns about unauthorized enrollment or children's privacy. The app's setup confirmation is not independent proof of legal guardianship.</p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">8. Security</h2>
+    <p>Profile names and face templates are encrypted using keys held by Android Keystore. Administrator PINs and recovery codes use salted verification values. The app configures Android backup and device-transfer rules to exclude its local data. These measures do not mean every local record is separately encrypted or that a compromised device is secure. No system can guarantee absolute security.</p>
+  </section>
+
+  <section aria-labelledby="support">
+    <h2 id="support">9. Support emails and this website</h2>
+    <p>If you email support, the publisher receives your email address, message and any information you choose to include, and uses it to respond, troubleshoot and handle privacy requests. Please do not send PINs, recovery codes, face templates, or photographs of children. Support correspondence is retained only as needed to handle the request and meet applicable legal obligations, and is separate from the app's 90-day local-history window. You may ask for deletion of correspondence, subject to any applicable retention obligations.</p>
+    <p>Support messages are processed through Gmail and its service infrastructure. Visiting a hosted copy of this policy also sends normal web-request information, such as an IP address and browser details, to the hosting provider. Those services may process information outside your country under their own policies. This page contains no publisher-added analytics, advertising scripts, cookies or forms.</p>
+  </section>
+
+  <section aria-labelledby="rights">
+    <h2 id="rights">10. Privacy questions and rights</h2>
+    <p>Depending on your location, you may have rights to access, correct or delete personal information, withdraw consent, object to or restrict certain processing, and complain to a relevant data-protection authority. Contact <a href="mailto:nazarbattu.support@gmail.com">nazarbattu.support@gmail.com</a> to ask about information held through support or to obtain help using the app's local controls. We may need proportionate information to verify a request; do not send sensitive documents unless a secure and appropriate process has been agreed.</p>
+  </section>
+
+  <section aria-labelledby="changes">
+    <h2 id="changes">11. Changes to this policy</h2>
+    <p>Updates will appear on this page with a revised date. Material changes to data processing will be reflected in the app's disclosures and renewed consent where required. This policy does not replace the in-app consent process.</p>
+  </section>
+</main>
+</body>
+</html>
